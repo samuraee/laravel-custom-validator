@@ -1,0 +1,33 @@
+{
+	"name": "tartan/laravel-custom-validator",
+	"description": "Laravel 5+ custom validators",
+	"keywords": [
+		"laravel",
+		"package",
+		"validator",
+		"persian",
+		"iranian",
+		"component"
+	],
+	"homepage": "https://github.com/theTartancoder/laravel-custom-validator",
+	"authors": [
+		{
+			"name": "Aboozar Ghaffari",
+			"email": "aboozar.ghf@gmail.com",
+			"homepage": "http://tartan.us.to/"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0",
+		"illuminate/support": ">=5.0.0"
+	},
+	"require-dev": {
+		"phpunit/phpunit": ">=4.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Tartan\\Validators\\": "src"
+		}
+	},
+	"license": "MIT"
+}
