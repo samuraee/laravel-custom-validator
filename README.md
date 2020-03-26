@@ -12,11 +12,11 @@ Tartan Custom Validators
 Add the required validator(s) to boot method of `app/Providers/AppServiceProvider.php`
  
 ```php
- Validator::extend('strength', 'Tartan\CustomValidator\Validators@validateStrength');
- Validator::extend('iran_billing_id', 'Tartan\CustomValidator\Validators@validateIranBillingId');
- Validator::extend('iran_shetab_card', 'Tartan\CustomValidator\Validators@validateShetabCard');
- Validator::extend('uuid', 'Tartan\CustomValidator\Validators@validateUuid');
- Validator::extend('iran_national_id', 'Tartan\CustomValidator\Validators@validateNationalId');
+Validator::extend('strength', 'Tartan\Validators\CustomValidator@validateStrength');
+Validator::extend('iran_billing_id', 'Tartan\Validators\CustomValidator@validateIranBillingId');
+Validator::extend('iran_shetab_card', 'Tartan\Validators\CustomValidator@validateShetabCard');
+Validator::extend('uuid', 'Tartan\Validators\CustomValidator@validateUuid');
+Validator::extend('iran_national_id', 'Tartan\Validators\CustomValidator@validateNationalId');
 ```
 
 Add following lines to `resources/lang/en/validation.php` in `Custom Validation Language Lines` part
